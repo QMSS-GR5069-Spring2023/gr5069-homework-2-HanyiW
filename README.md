@@ -1,33 +1,37 @@
-# HOMEWORK # 2
+# Lab 3 Project
 
-**Objective:** This homework exercise is intended to give you first-hand experience with the workflow in a DS shop aligned with current best practices and to help you understand the logic behind these best practices. If you need a refresher, check the slides for [topic 3](https://github.com/marco-morales/QMSS-GR5069_Spring2023/tree/main/topic_03) and [topic 4](https://github.com/marco-morales/QMSS-GR5069_Spring2023/tree/main/topic_04).
+### Question 1: This question asked me to create a multivariate time series and perform any interpolations.
 
-### Instructions:
+I imported GSS trend data, looking specifically at support for gun laws, age, happiness of marriage, degree, and income over time.
 
-#### (a) select a project and push it to this repo
+### Question 2: This question asked me to graph the relationship between x and y and explain how y relates to key xs.
 
-* choose a project of your own that you have produced in the past: *e.g*  a homework or a final project for another class
-* `push` all files from that project to this repo without changing it. (Note that GitHub is not designed to store data and thus cannot store large files.)
+I found the correlation coefficients and created a headmap to show the coefficients. I thne created plots of the variables over time. 
 
-#### (b) add a collaborator
+### Question 3: This question asked me to run a simple time series regression with only one x-value.
 
-* check the list [**here**](img/homework-2-assignments.png) to find your randomly assigned partners for this homework. You will appear as the owner of this repo with an associated collaborator. You will also appear as a collaborator for someone else's repo
-* ask to be added as a collaborator to your designated owner's repo
-* add your collaborator to this repo
+I regressed percentage of people who support gun laws on percentage of people with a BA degree.
 
-#### (c) create pull requests for the repo you are a collaborator for
+### Question 4: This question asked me to run a time series regression with one x and trend. It also asked me to deal with autocorrelation.
 
-* create **one `pull` request per issue** you identify as subject to improvement. Note that the pull request should include the substantive change you are proposing for the repo. Note that you will not receive full marks is you do not add the change itself.
-* in your pull requests explain **why you are recommending specific changes** and **how do you perceive it might help** the you of the future. Note that you will not receive full marks if you do not add these explanations.
-* create at least five (5) pull requests to **improve the structure of the project** [`20 pts`]
-    * these could include - but are not limited to -  enhancements to the folder structure, adding an informative `README` file, adding items to the `.gitignore` file, dropping data folders, etc
-* create at least seven (7) pull requests to **improve coding etiquette** [`40 pts`]
-    * these could include - but are not limited to - reorganizing script structure, improving comments, using relative paths, improving readability, creating (and calling) additional scripts, etc
+I regressed percentage of people who support gun laws on percentage of people with a BA degree and year to see the trend over time. I also found the BP, p-value, f-value, f p-value, and then plotted the autocorrelation.
 
+### Question 5: This question asked me to consider running a time series regression with more x-values. 
 
+I regressed percentage of people who support gun laws on age, percentage of people with BA degrees, percentage of people in happy marriages, and year. I also looked at the VIR factor.
 
-#### (d) act on all pull requests from your collaborator [`40 pts`]
+### Question 6: This question asked me to run a first-differenced time series regression.
 
-* you will receive multiple `pull` requests from your collaborator with suggestions on how to adopt best practices in your repo
-* use the pull request functionality in GitHub to **accept**, **comment** or **reject** each one of these pull requests.
-* note that you will not receive full marks if you leave pull requests unattended.
+I regressed percentage of people who support fun laws on percentage of people with BA degrees and year but by year.
+
+### Question 7: This question asked me to check my variables for unit roots.
+
+I ran several tests on my variables: Augmented Dickey-Fuller, Dickey-Fuller GLS, and Philips-Perron Test.
+
+### Question 8: This question asked me to perform an automatic ARIMA
+
+I ran an automatic ARIMA on the residual errors.
+
+### Question 9: This question asked me to run an ARIMA from the previous step.
+
+I ran an ARIMA from the previous step.
